@@ -6,7 +6,7 @@ const config: IParametrosConfiguracao = {
   loja: process.env.SITEF_LOJA || '00000000',
   terminal: process.env.SITEF_TERMINAL || '00000000',
   reservado: process.env.SITEF_RESERVADO || '',
-  parametrosAdicionais: process.env.SITEF_RESERVADO || '[00000000000000;00000000000000]',
+  parametrosAdicionais: process.env.SITEF_PARAMETROS_ADICIONAIS || '[00000000000000;00000000000000]',
 };
 
 export default config;
