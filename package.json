@@ -1,15 +1,15 @@
 {
-    "name": "node-sitef",
-    "version": "1.4.0",
-    "repository": "https://github.com/danielccunha/node-sitef",
-    "homepage": "https://github.com/danielccunha/node-sitef",
+    "name": "node-sitef-updated",
+    "version": "1.5.0",
+    "repository": "https://github.com/joaodematejr/node-sitef",
+    "homepage": "https://github.com/joaodematejr/node-sitef",
     "author": {
         "name": "Daniel Cunha",
         "email": "danielcunha54@gmail.com",
         "url": "https://github.com/danielccunha"
     },
     "license": "GPL-3.0",
-    "bugs": "https://github.com/danielccunha/node-sitef/issues",
+    "bugs": "https://github.com/joaodematejr/node-sitef/issues",
     "main": "dist/index.js",
     "scripts": {
         "build": "tsc",
@@ -54,6 +54,11 @@
             "name": "Felipe Furst",
             "email": "fefurst@gmail.com",
             "url": "https://github.com/fefurst"
+        },
+        {
+            "name": "João Dematé Jr",
+            "email": "joaodematejr@gmail.com",
+            "url": "https://github.com/joaodematejr"
         }
     ],
     "files": [
