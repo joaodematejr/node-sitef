@@ -7,7 +7,13 @@ import { messages } from '../shared/utils';
 
 const main = async () => {
   // Define o caminho para as DLLs do SiTef e instancia o client
-  const dlls = path.resolve(__dirname, '..', 'shared', 'bin', 'CliSiTef64I.dll');
+  const dlls = path.resolve(
+    __dirname,
+    '..',
+    'shared',
+    'bin',
+    'CliSiTef64I.dll'
+  );
   const sitef = new SiTef(dlls);
 
   try {
@@ -32,7 +38,7 @@ const main = async () => {
     } else {
       console.log(chalk.red(title), 'Não foi possível escrever a mensagem.');
     }
-  } catch (error) {
+  } catch (error: any) {
     return console.error(chalk.red(error.message));
   }
 };

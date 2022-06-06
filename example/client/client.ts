@@ -21,7 +21,7 @@ export const configurar = async () => {
     const response = await sitef.configurar(config);
     const message = messages.configuracao[response];
     console.log(now(), message, '\n');
-  } catch (error) {
+  } catch (error: any) {
     handleError(error);
   }
 };
@@ -33,7 +33,7 @@ export const verificarPresenca = async () => {
     const response = await sitef.verificarPresenca();
     const message = messages.verificacaoPresenca[response];
     console.log(now(), message, '\n');
-  } catch (error) {
+  } catch (error: any) {
     handleError(error);
   }
 };
@@ -52,7 +52,7 @@ export const escreverMensagem = async () => {
         : 'Não foi possível escrever a mensagem.';
 
     console.log(`\n${now()}`, message, '\n');
-  } catch (error) {
+  } catch (error: any) {
     handleError(error);
   }
 };
@@ -136,7 +136,7 @@ export const simularFuncao = async () => {
 
     const message = messages.funcao[retorno];
     console.log(now(), message, '\n');
-  } catch (error) {
+  } catch (error: any) {
     handleError(error);
   }
 };
